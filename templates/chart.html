@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='icons/chartblck.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/chartsstyle.css')}}">
+    <script src="https://kit.fontawesome.com/d563a47cae.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Chakra+Petch&family=IBM+Plex+Sans:wght@200&family=Kanit:wght@300&family=Poppins&family=Secular+One&family=Teko&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=IBM+Plex+Sans:wght@200&family=Kanit:wght@300&family=Poppins&family=Teko&display=swap');
+      </style>
+</head>
+<header>
+<img class="logo" src="{{ url_for('static', filename='icons/chart.png') }}" alt="logo">
+<h1 id="logo">NUMBER RECOGNITION</h1>
+<div class="back">
+  <a href="{{ url_for('mainpage') }}"><button id="home" class="back">Back to Home</button></a></div>
+</header>
+<body>
+  <!---------------------------------------------------SIDEBAR----------------------------------------------------->
+  <nav>
+    <ul>
+        <img class="menu" src="{{ url_for('static', filename='icons/nr.png') }}" alt="logo">
+         <h1 class="menu">Menu</h1>
+  
+      <li> <a href="{{ url_for('mainpage') }}" class="sidebar"> 
+        <img class="icons ic-home" src="{{ url_for('static', filename='icons/home.png') }}" alt="home">
+        <span class="nav-item"> Home </span> </a></li>
+  
+      <li> <a href="{{ url_for('handwritten') }}" class="sidebar">    
+        <img class="icons ic-hw" src="{{ url_for('static', filename='icons/hw.png') }}" alt="hw">
+        <span class="nav-item"> Handwritten </span> </a></li>
+    </ul>
+   </nav>
+
+  <!----------------------------------------Graph----------------------------------------------------->
+  <center><h1 id="epoch">EPOCH</h1></center>
+  <br>
+  <div class="chart">
+    <canvas id="myChart"></canvas>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.1/chart.min.js" 
+    integrity="sha512-2uu1jrAmW1A+SMwih5DAPqzFS2PI+OPw79OVLS4NJ6jGHQ/GmIVDDlWwz4KLO8DnoUmYdU8hTtFcp8je6zxbCg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+    type="text/javascript"></script>
+<script src="{{ url_for('static', filename='script/charts.js') }}"></script>
+  </body>
+</html>

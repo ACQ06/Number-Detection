@@ -1,0 +1,179 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+header {
+    height: 80px;
+    margin-top: -15px;
+    background-color: transparent;
+    box-shadow: 0 25px 30px rgba(0, 0, 0, 0.6);
+}
+
+img.logo {
+    height: 65px;
+    width: 65px;
+    margin: 25px 20px;
+    display: flex;
+    transition: all 0.5s ease;
+}
+
+h1#logo {
+    font-weight: lighter;
+    padding-left: 100px;
+    margin-top: -80px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(/static/images/bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 1080px;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Number recognition na text*/
+div.main {
+    position: relative;
+    margin: 20% 2%;
+}
+
+h1#nr {
+    color: rgb(255, 255, 255);
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 0 100px;
+    font-size: 80px;
+    font-weight: lighter;
+}
+
+/*------------------------------------------------ANIMATED BG----------------------------------------------- */
+@keyframes wave {
+    100% {
+        transform: translateX(-1000px);
+    }
+}
+
+img.wave {
+    margin-left: 20px;
+    position: absolute;
+    display: block;
+    width: 150vh;
+    height: 80vh;
+    background-repeat: repeat-x;
+    background-size: 1000px 100px;
+    animation: wave 15s linear infinite;
+}
+
+img.wave2 {
+    background-repeat: repeat-x;
+    margin-left: 1325px;
+    position: absolute;
+    display: block;
+    width: 160vh;
+    height: 80vh;
+    background-size: 1000px 100px;
+    background-repeat: repeat-x;
+    animation: wave 15s linear infinite;
+}
+
+img.wave3 {
+    background-repeat: repeat-x;
+    margin-left: 2390px;
+    position: absolute;
+    display: block;
+    width: 150vh;
+    height: 80vh;
+    background-size: 1000px 100px;
+    animation: wave 16s linear infinite;
+}
+
+
+/*--------------------------------BUTTONS----------------------------- */
+div.buttons {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1190px;
+    width: 450px;
+    margin-top: -620px;
+}
+
+a.main {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    padding: 15px 36px;
+    margin: 20px 0;
+    color: white;
+    font-size: 50px;
+    font-family: 'Chakra Petch', sans-serif;
+    letter-spacing: 1px;
+    border-radius: .50cm;
+    text-align: center;
+    background-color: transparent;
+    box-shadow: 0 25px 30px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3 ease;
+}
+
+
+/*---------------------------------------------------BUTTON ANIMATIONS----------------------------------------------- */
+a.main::after,
+a.mb::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+a.main:hover {
+    transform: translate(-12px, -12px);
+}
+
+a.main:hover::after {
+    background-image: linear-gradient(90deg, #3a77ce, #8a44aa, #e885b4);
+    opacity: 1;
+}
+
+a.main:hover::before {
+    transform: translate(12px, 12px);
+}
+
+button#about {
+    position: absolute;
+    top: 30px;
+    right: 5%;
+    background: transparent;
+    border: none;
+    appearance: none;
+    background-color: inherit;
+}
+
+img#abti {
+    width: 30px;
+    height: 30px;
+}
+
+button#about:hover {
+    color: #d393b1;
+    opacity: 1;
+    cursor: pointer;
+}

@@ -1,0 +1,206 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+header {
+    height: 80px;
+    margin-top: -15px;
+    background-color: transparent;
+    box-shadow: 0 25px 30px rgba(0, 0, 0, 0.6);
+}
+
+img.logo {
+    height: 65px;
+    width: 65px;
+    margin: 25px 20px;
+    display: flex;
+    transition: all 0.5s ease;
+}
+
+h1#logo {
+    font-weight: lighter;
+    padding-left: 100px;
+    margin-top: -80px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(/static/images/bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 1080px;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Number recognition na text*/
+div.main {
+    position: relative;
+    margin: 15% 2%;
+}
+
+h1#ab {
+    color: rgb(255, 255, 255);
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 0 175px;
+    font-size: 80px;
+    font-weight: lighter;
+    position: relative;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    left: 5%;
+    color: blanchedalmond;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-family: 'Chakra Petch', sans-serif;
+    text-align: justify;
+    text-shadow: #e885b4;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 9.5%;
+}
+
+@keyframes wave {
+    100% {
+        transform: translateX(-1000px);
+    }
+}
+
+img.wave {
+
+    margin-left: 20px;
+    position: absolute;
+    display: block;
+    width: 150vh;
+    height: 80vh;
+    background-repeat: repeat-x;
+    background-size: 1000px 100px;
+    animation: wave 15s linear infinite;
+}
+
+img.wave2 {
+    background-repeat: repeat-x;
+    margin-left: 1325px;
+    position: absolute;
+    display: block;
+    width: 160vh;
+    height: 80vh;
+    background-size: 1000px 100px;
+    background-repeat: repeat-x;
+    animation: wave 15s linear infinite;
+}
+
+img.wave3 {
+    background-repeat: repeat-x;
+    margin-left: 2390px;
+    position: absolute;
+    display: block;
+    width: 150vh;
+    height: 80vh;
+    background-size: 1000px 100px;
+    animation: wave 16s linear infinite;
+}
+
+/*--------------------------------BUTTONS----------------------------- */
+div.buttons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1190px;
+    width: 450px;
+    margin-top: -428px;
+}
+
+a.main {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    padding: 15px 36px;
+    margin: 20px 0;
+    color: white;
+    font-size: 50px;
+    font-family: 'Chakra Petch', sans-serif;
+    letter-spacing: 1px;
+    border-radius: .50cm;
+    text-align: center;
+    background-color: transparent;
+    box-shadow: 0 25px 30px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3 ease;
+}
+
+/*---------------------------------------------------BUTTON ANIMATIONS----------------------------------------------- */
+a.main::after,
+a.main::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+a.main:hover {
+    transform: translate(-12px, -12px);
+
+}
+
+a.main:hover::after {
+    background-image: linear-gradient(90deg, #3a77ce, #8a44aa, #e885b4);
+    opacity: 0.6;
+}
+
+a.main:hover::before {
+    transform: translate(12px, 12px);
+
+}
+
+/*button home*/
+div.back {
+    margin-left: 85%;
+    margin-top: -60px;
+}
+
+button#home {
+    position: relative;
+    top: 15px;
+    background: transparent;
+    box-shadow: 0 25px 30px rgba(0, 0, 0, 0.5);
+    border-radius: .30cm;
+    font-size: 25px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    height: 55px;
+    width: 200px;
+    cursor: pointer;
+}
+
+button#home:hover {
+    background-image: linear-gradient(90deg, #3a77ce, #8a44aa, #e885b4);
+    opacity: 1;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
