@@ -8,3 +8,8 @@ How to Run:
 4. use command 'Flask run'
 5. Follow the locahost webpage
 ```
+
+```
+# TODO:
+1. Fix CSS to be reponsive.
+```
