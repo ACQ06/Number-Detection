@@ -5,7 +5,6 @@ from keras.layers import Conv2D, MaxPool2D, Flatten, Dense, Dropout
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-from keras.models import load_model
 
 pixel_width = 28
 pixel_height = 28
