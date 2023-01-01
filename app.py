@@ -14,12 +14,8 @@ app.config['UPLOAD_FOLDER'] = IMAGE_FOLDER
 def mainpage():
     return render_template('mainpage.html')
 
-@app.route("/handwritten", methods = ['GET', 'POST'])
+@app.route("/handwritten", methods = ['GET'])
 def handwritten():
-    args = request.args.get('number')
-    if args:
-        return render_template('handwritten.html', number=str(args))
-    print('no args')
     return render_template('handwritten.html')
 
 
