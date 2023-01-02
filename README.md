@@ -19,4 +19,5 @@ Required Modules
 3. Keras
 4. Opencv-python
 5. Numpy
+6. TensorFlow
 ```
