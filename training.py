@@ -3,8 +3,6 @@ from keras.utils import to_categorical
 from keras.models import Sequential
 from keras.layers import Conv2D, MaxPool2D, Flatten, Dense, Dropout
 import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
 
 pixel_width = 28
 pixel_height = 28
@@ -39,6 +37,7 @@ model_logs = model.fit(X_train,y_train,epochs=10)
 logs = pd.DataFrame(model_logs.history)
 
 hist_csv_file = 'history.csv'
+
 with open(hist_csv_file, mode='w') as f:
     logs.to_csv(f)
 
@@ -48,8 +47,3 @@ print('Accuracy: ', accuracy)
 print('Loss: ', loss)
 
 model.save('model.h5')
-print(model_logs.history)
-
-plt.show(X_test[0])
-prediction = model.predict(X_test)
-print(np.argmax(prediction[0]))
