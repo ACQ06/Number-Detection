@@ -69,6 +69,7 @@ function clear_canvas(){
 
     restore_array = [];
     index = -1;
+    document.getElementById('num').innerHTML = '';
 }
 
 function undo_last(){

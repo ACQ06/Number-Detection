@@ -32,10 +32,9 @@ const data = {
         borderRadius:'10',
         label: "accuracy",
         backgroundColor: accuracyGradient,
-        fill: false,     
-        tension: 0.1,    
+        fill: false,
+        tension: 0.1,
     },
-    
     ],
 };
 

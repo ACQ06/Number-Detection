@@ -1,5 +1,5 @@
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     text-decoration: none;
     padding: 0;
     margin: 0;
@@ -29,7 +29,7 @@ h1#logo {
     margin-top: -80px;
     font-size: 30px;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 body {
@@ -57,6 +57,7 @@ h1#nr {
     margin: 0 100px;
     font-size: 80px;
     font-weight: lighter;
+    vertical-align: middle;
 }
 
 /*------------------------------------------------ANIMATED BG----------------------------------------------- */
@@ -103,12 +104,12 @@ img.wave3 {
 
 /*--------------------------------BUTTONS----------------------------- */
 div.buttons {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
-    margin-left: 1190px;
     width: 450px;
-    margin-top: -620px;
+    top: 40%;
+    left: 65%;
 }
 
 a.main {

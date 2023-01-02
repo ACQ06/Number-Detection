@@ -29,7 +29,7 @@ h1#logo {
     margin-top: -80px;
     font-size: 30px;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 body {
@@ -85,10 +85,10 @@ a {
 /* sidebar */
 nav {
     position: absolute;
-    bottom: 12%;
+    top: 34%;
     left: 15px;
-    height: 600px;
-    width: 6%;
+    height: 400px;
+    width: 5.5%;
     background-color: transparent;
     overflow: hidden;
     transition: width 0.2s linear;
@@ -141,23 +141,28 @@ nav:hover {
     transition: all 0.5s ease;
 }
 
+h1{
+    font-family: 'Chakra Petch', sans-serif;
+}
+
 h1#nr {
     color: rgb(255, 255, 255);
-    font-family: 'Chakra Petch', sans-serif;
     margin: 0 100px;
     font-size: 70px;
     font-weight: lighter;
 }
 
+h1#num{
+    font-size: 70px;
+}
+
 h1#instructions {
-    font-family: 'Chakra Petch', sans-serif;
     color: white;
     margin-top: 40px;
 }
 
 h1#prediction{
     color: white;
-    font-family: 'Chakra Petch', sans-serif;
 }
 
 /*button home*/
