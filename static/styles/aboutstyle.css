@@ -9,25 +9,25 @@
 }
 
 header {
-    height: 80px;
-    margin-top: -15px;
+    position: relative;
+    height: 5vw;
     background-color: transparent;
     box-shadow: 0 25px 30px rgba(0, 0, 0, 0.6);
 }
 
 img.logo {
-    height: 65px;
-    width: 65px;
-    margin: 25px 20px;
-    display: flex;
+    height: auto;
+    width: 4vw;
+    margin: 0.3vw;
+    vertical-align: middle;
     transition: all 0.5s ease;
 }
 
 h1#logo {
     font-weight: lighter;
-    padding-left: 100px;
-    margin-top: -80px;
-    font-size: 30px;
+    font-size: 3vw;
+    padding: auto;
+    margin: auto;
     color: white;
     font-family: 'Poppins', sans-serif;
 }
@@ -45,28 +45,33 @@ body {
     overflow-y: hidden;
 }
 
+.content {
+    width: 100%;
+    position: relative;
+}
+
 /* Number recognition na text*/
 div.main {
     position: relative;
-    margin: 15% 2%;
+    margin-top: 3%;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    float:left;
+    width: 50%;
 }
+
 
 h1#ab {
     color: rgb(255, 255, 255);
     font-family: 'Chakra Petch', sans-serif;
-    margin: 0 175px;
-    font-size: 80px;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: 5%;
+    font-size: 5vw;
     font-weight: lighter;
     position: relative;
-}
-
-.container {
-    width: 50%;
-    margin: auto;
-    overflow: hidden;
-    position: absolute;
-    left: 5%;
-    color: blanchedalmond;
 }
 
 p {
@@ -74,9 +79,11 @@ p {
     font-family: 'Chakra Petch', sans-serif;
     text-align: justify;
     text-shadow: #e885b4;
-    font-size: 18px;
+    font-size: 1.5vw;
     margin-top: 20px;
     margin-left: 9.5%;
+    margin-bottom: auto;
+    margin-right: auto;
 }
 
 @keyframes wave {
@@ -122,22 +129,23 @@ img.wave3 {
 
 /*--------------------------------BUTTONS----------------------------- */
 div.buttons {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
-    margin-left: 1190px;
-    width: 450px;
-    margin-top: -428px;
+    float: right;
+    width: 40%;
+    margin-top: 5%;
+    margin-right: auto;
 }
 
 a.main {
     position: relative;
     overflow: hidden;
     display: inline-block;
-    padding: 15px 36px;
-    margin: 20px 0;
+    padding: 16px 6vw;
+    margin: 5% 0;
     color: white;
-    font-size: 50px;
+    font-size: 3vw;
     font-family: 'Chakra Petch', sans-serif;
     letter-spacing: 1px;
     border-radius: .50cm;
@@ -203,4 +211,65 @@ button#home:hover {
     opacity: 1;
     position: absolute;
     transition: transform 0.3s ease;
+}
+
+@media (max-width: 425px) {
+
+    body {
+        height: 100%;
+        width: 100%;
+        min-height: fit-content;
+    }
+
+    header {
+        position: relative;
+        height: 15vw;
+        background-color: transparent;
+        box-shadow: 0 25px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    img.logo {
+        height: auto;
+        width: 11vw;
+        margin: 1vw;
+        vertical-align: middle;
+        transition: all 0.5s ease;
+    }
+    
+    h1#logo {
+        font-weight: lighter;
+        font-size: 7vw;
+        padding: auto;
+        margin: auto;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    div.main {
+        margin: auto;
+        width: 100%;
+        display: block;
+    }
+
+    div.buttons {
+        margin: auto;
+        width: 100%;
+        display: block;
+        padding: 0% 10%;
+    }
+
+    h1#ab { 
+        font-size: 10vw;
+        margin-top: 4vw;
+    }
+
+    p {
+        margin: 5vw;
+        font-size: 4vw;
+    }
+
+    a.main {
+        margin: 0% 5vw;
+    }
+
 }

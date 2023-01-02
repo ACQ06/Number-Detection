@@ -13,32 +13,31 @@
       </style>
 </head>
 <header>
-<img class="logo" src="{{ url_for('static', filename='icons/nr.png')}}" alt="logo">
-<h1 id="logo">DATA MINING</h1>
+<h1 id="logo">
+<img class="logo" src="{{ url_for('static', filename='icons/nr.png')}}" alt="logo"/>
+DATA MINING</h1>
 <div class="back">
-    <a href="{{ url_for('mainpage') }}"><button id="home" class="back">Back to Home</button></a></div>
+    <a href="{{ url_for('mainpage') }}"><button id="home" class="back">Back to Home</button></a>
+</div>
 </header>
 <body>
     <img class= "wave" src="{{ url_for('static', filename='icons/wave.png') }}">
     <img class="wave2"src="{{ url_for('static', filename='icons/wave2.png') }}">
     <img class="wave3"src="{{ url_for('static', filename='icons/wave.png') }}">
-<div class="main">
-    <section>
+<div class="content">
+    <div class="main">
         <h1 id="ab">ABOUT</h1>
-        <div class="container">
             <blockquote cite = "https://numberdyslexia.com/number-recognition-guide-its-importance-different-learning-methodologies/?fbclid=IwAR2qfpobJTUXFghaa0WVhf1BplPomnhCkiqUBAQMKLIYO2BMX8YElaUOm0o">
             <p>The term "number recognition skill" refers to the capacity to identify, visualize, and name the most fundamental numerals—the numbers. Despite appearing to be quite wide, number recognition can be broken down into more manageable groupings of ideas and abilities. These include things like choosing the appropriate item count, matching the precise numbers to the object count, and choosing the appropriate nomenclature for the count.</p>
             </blockquote>
             <br>
             <p>This website is for academic purposes only. This is prepared and presented by the students of University of Makati in compliance with their Introduction to Data Mining course.</p>
-        </div>
-    </section>
-</div>
-  
-<div class="buttons">
-  <a href="{{ url_for('handwritten') }}" class="main"><span> Handwritten</span></a>
-  <a href="{{ url_for('chart') }}" class="main"><span>Chart</span></a>
-<script type="text/javascript" src="{{ url_for('static', filename='script/buttons.js')}}"></script>
+    </div>
+    <div class="buttons">
+        <a href="{{ url_for('handwritten') }}" class="main"><span> Handwritten</span></a>
+        <a href="{{ url_for('chart') }}" class="main"><span>Chart</span></a>
+        <script type="text/javascript" src="{{ url_for('static', filename='script/buttons.js')}}"></script>
+    </div>
 </div>
 </body>
 </html>
