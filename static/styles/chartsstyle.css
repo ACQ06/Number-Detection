@@ -125,7 +125,6 @@ nav {
 /* animation */
 a.sidebar:hover {
     background-color: rgba(255, 255, 255, 0.3);
-    top: 20px;
 }
 
 nav:hover {
@@ -171,31 +170,4 @@ div.chart {
     border-color: rgb(96, 126, 136);
     box-shadow: 0 25px 30px rgba(0, 0, 0, 0.5);
     border-radius: .30cm;
-}
-
-/*button home*/
-div.back {
-    margin-left: 85%;
-    margin-top: -70px;
-}
-
-button#home {
-    position: relative;
-    background: transparent;
-    box-shadow: 0 25px 30px rgba(0, 0, 0, 0.5);
-    border-radius: .30cm;
-    font-size: 25px;
-    font-family: 'Chakra Petch', sans-serif;
-    font-weight: lighter;
-    color: rgb(255, 255, 255);
-    height: 55px;
-    width: 200px;
-    cursor: pointer;
-}
-
-button#home:hover {
-    background-image: linear-gradient(90deg, #3a77ce, #8a44aa, #e885b4);
-    opacity: 1;
-    position: absolute;
-    transition: transform 0.3s ease;
 }

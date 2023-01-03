@@ -133,9 +133,9 @@ div.buttons {
     display: flex;
     flex-direction: column;
     float: right;
-    width: 40%;
+    width: 30%;
     margin-top: 5%;
-    margin-right: auto;
+    margin-right: 5vw;
 }
 
 a.main {
@@ -171,8 +171,11 @@ a.main::before {
 }
 
 a.main:hover {
-    transform: translate(-12px, -12px);
+    transform: scale(1.1);
+}
 
+a.main {
+    transition: all .2s ease-in-out;
 }
 
 a.main:hover::after {

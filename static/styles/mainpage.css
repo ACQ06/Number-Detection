@@ -146,7 +146,11 @@ a.mb::before {
 }
 
 a.main:hover {
-    transform: translate(-12px, -12px);
+    transform: scale(1.1);
+}
+
+a.main{
+    transition: all .2s ease-in-out;
 }
 
 a.main:hover::after {
