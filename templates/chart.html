@@ -14,8 +14,21 @@
       </style>
 </head>
 <header>
-<img class="logo" src="{{ url_for('static', filename='icons/chart.png') }}" alt="logo">
-<h1 id="logo">NUMBER RECOGNITION</h1>
+
+<h1 id="logo">
+  <img class="logo" src="{{ url_for('static', filename='icons/chart.png') }}" alt="logo">
+  NUMBER RECOGNITION
+  <a href="{{ url_for('mainpage') }}"> 
+    <button id="mainpage" class="mainpage">
+        <img src="{{ url_for('static', filename='icons/home.png') }}" alt="home" id="homei" class="homei">
+    </button>
+  </a>
+  <a href="{{ url_for('handwritten') }}"> 
+    <button id="handwritten" class="handwritten">
+        <img src="{{ url_for('static', filename='icons/hw.png') }}" alt="hw" id="hwi" class="hwi">
+    </button>
+  </a>
+</h1>
 </header>
 <body>
   <!---------------------------------------------------SIDEBAR----------------------------------------------------->

@@ -134,7 +134,7 @@ div.buttons {
     flex-direction: column;
     float: right;
     width: 30%;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-right: 5vw;
 }
 
@@ -142,7 +142,7 @@ a.main {
     position: relative;
     overflow: hidden;
     display: inline-block;
-    padding: 16px 6vw;
+    padding: 15px 6vw;
     margin: 5% 0;
     color: white;
     font-size: 3vw;
@@ -189,10 +189,6 @@ a.main:hover::before {
 }
 
 /*button home*/
-div.back {
-    margin-left: 85%;
-    margin-top: -60px;
-}
 
 button#home {
     position: relative;
@@ -214,6 +210,28 @@ button#home:hover {
     opacity: 1;
     position: absolute;
     transition: transform 0.3s ease;
+}
+
+button#mainpage {
+    position: relative;
+    float: right;
+    margin-top: 1%;
+    right: 5%;
+    background: transparent;
+    border: none;
+    appearance: none;
+    background-color: inherit;
+}
+
+img#homei {
+    width: 2.3vw;
+    height: auto;
+}
+
+button#mainpage:hover {
+    color: #d393b1;
+    opacity: 1;
+    cursor: pointer;
 }
 
 @media (max-width: 425px) {
@@ -275,4 +293,11 @@ button#home:hover {
         margin: 0% 5vw;
     }
 
+    button#mainpage {
+        margin-top: 3%;
+    }
+    
+    img#homei {
+        width: 8vw;
+    }
 }

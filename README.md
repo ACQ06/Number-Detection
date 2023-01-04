@@ -9,7 +9,7 @@ How to Run:
 
 ```
 # TODO:
-1. Fix all CSS to be reponsive.
+1. Canvas does not interact in mobile, fix the buttons on handwritten page to be centered on mobile.
 ```
 
 ```

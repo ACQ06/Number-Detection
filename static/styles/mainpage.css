@@ -1,5 +1,5 @@
 * {
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     padding: 0;
     margin: 0;
@@ -9,27 +9,27 @@
 }
 
 header {
-    height: 80px;
-    margin-top: -15px;
+    position: relative;
+    height: 5vw;
     background-color: transparent;
     box-shadow: 0 25px 30px rgba(0, 0, 0, 0.6);
 }
 
 img.logo {
-    height: 65px;
-    width: 65px;
-    margin: 25px 20px;
-    display: flex;
+    height: auto;
+    width: 4vw;
+    margin: 0.3vw;
+    vertical-align: middle;
     transition: all 0.5s ease;
 }
 
 h1#logo {
     font-weight: lighter;
-    padding-left: 100px;
-    margin-top: -80px;
-    font-size: 30px;
+    font-size: 3vw;
+    padding: auto;
+    margin: auto;
     color: white;
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -45,17 +45,30 @@ body {
     overflow-y: hidden;
 }
 
+.content {
+    width: 100%;
+    position: relative;
+}
+
 /* Number recognition na text*/
 div.main {
     position: relative;
-    margin: 20% 2%;
+    margin-top: 3%;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    float:left;
+    width: 50%;
 }
 
 h1#nr {
     color: rgb(255, 255, 255);
     font-family: 'Chakra Petch', sans-serif;
-    margin: 0 100px;
-    font-size: 80px;
+    margin-top: 25%;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: 5%;
+    font-size: 5vw;
     font-weight: lighter;
     vertical-align: middle;
 }
@@ -104,22 +117,23 @@ img.wave3 {
 
 /*--------------------------------BUTTONS----------------------------- */
 div.buttons {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
-    width: 450px;
-    top: 40%;
-    left: 65%;
+    float: right;
+    width: 30%;
+    margin-top: 10%;
+    margin-right: 5vw;
 }
 
 a.main {
     position: relative;
     overflow: hidden;
     display: inline-block;
-    padding: 15px 36px;
-    margin: 20px 0;
+    padding: 15px 6vw;
+    margin: 5% 0;
     color: white;
-    font-size: 50px;
+    font-size: 3vw;
     font-family: 'Chakra Petch', sans-serif;
     letter-spacing: 1px;
     border-radius: .50cm;
@@ -163,8 +177,9 @@ a.main:hover::before {
 }
 
 button#about {
-    position: absolute;
-    top: 30px;
+    position: relative;
+    float: right;
+    margin-top: 1.5%;
     right: 5%;
     background: transparent;
     border: none;
@@ -173,12 +188,76 @@ button#about {
 }
 
 img#abti {
-    width: 30px;
-    height: 30px;
+    width: 2.3vw;
+    height: auto;
 }
 
 button#about:hover {
     color: #d393b1;
     opacity: 1;
     cursor: pointer;
+}
+
+@media (max-width: 425px) {
+
+    body {
+        height: 100%;
+        width: 100%;
+        min-height: fit-content;
+    }
+
+    header {
+        position: relative;
+        height: 15vw;
+        background-color: transparent;
+        box-shadow: 0 25px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    img.logo {
+        height: auto;
+        width: 11vw;
+        margin: 1vw;
+        vertical-align: middle;
+        transition: all 0.5s ease;
+    }
+    
+    h1#logo {
+        font-weight: lighter;
+        font-size: 7vw;
+        padding: auto;
+        margin: auto;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    div.main {
+        margin: auto;
+        width: 100%;
+        display: block;
+    }
+
+    div.buttons {
+        margin: 10% auto;
+        width: 100%;
+        display: block;
+        padding: 0% 10%;
+    }
+
+    h1#nr { 
+        font-size: 10vw;
+        margin-top: 10%;
+    }
+
+    a.main {
+        margin: 0% 5vw;
+    }
+
+    button#about {
+        margin-top: 3%;
+    }
+
+    img#abti {
+        width: 8vw;
+        height: auto;
+    }
 }
