@@ -17,24 +17,31 @@
   </style>
 </head>
 <header>
-  <img class="logo" src="{{ url_for('static', filename='icons/nr.png') }}" alt="logo">
-  <h1 id="logo">DATA MINING</h1>
-  <a href="{{ url_for('about') }}"><button id="about"><img src="{{ url_for('static', filename='icons/abt.png') }}"
-        id="abti" alt="abtb"></button></a></div>
+  <h1 id="logo">
+    <img class="logo" src="{{ url_for('static', filename='icons/nr.png') }}" alt="logo">
+    DATA MINING
+    <a href="{{ url_for('about') }}">
+      <button id="about">
+        <img src="{{ url_for('static', filename='icons/abt.png') }}" id="abti" alt="abtb">
+      </button>
+    </a>
+  </h1>
 </header>
 
 <body>
   <img class="wave" src="{{ url_for('static', filename='icons/wave.png') }}">
   <img class="wave2" src="{{ url_for('static', filename='icons/wave2.png') }}">
   <img class="wave3" src="{{ url_for('static', filename='icons/wave.png') }}">
-  <div class="main">
+  <div class="content">
+    <div class="main">
     <h1 id="nr">NUMBER RECOGNITION</h1>
-  </div>
+    </div>
   <!-----------------------------------------------------buttons-------------------------------------------------->
-  <div class="buttons">
-    <a href="{{ url_for('handwritten') }}" class="main"><span> Handwritten</span></a>
-    <a href="{{ url_for('chart') }}" class="main"><span>Chart</span></a>
-    <script type="text/javascript" src="{{ url_for('static', filename='script/buttons.js')}}"></script>
+    <div class="buttons">
+      <a href="{{ url_for('handwritten') }}" class="main"><span> Handwritten</span></a>
+      <a href="{{ url_for('chart') }}" class="main"><span>Chart</span></a>
+      <script type="text/javascript" src="{{ url_for('static', filename='script/buttons.js')}}"></script>
+    </div>
   </div>
 </body>
 

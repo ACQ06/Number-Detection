@@ -9,27 +9,27 @@
 }
 
 header {
-    height: 80px;
-    margin-top: -15px;
+    position: relative;
+    height: 5vw;
     background-color: transparent;
-    box-shadow: 0 25px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 25px 30px rgba(0, 0, 0, 0.6);
 }
 
 img.logo {
-    height: 65px;
-    width: 65px;
-    margin: 25px 20px;
-    display: flex;
+    height: auto;
+    width: 4vw;
+    margin: 0.3vw;
+    vertical-align: middle;
     transition: all 0.5s ease;
 }
 
 h1#logo {
     font-weight: lighter;
-    padding-left: 100px;
-    margin-top: -80px;
-    font-size: 30px;
+    font-size: 3vw;
+    padding: auto;
+    margin: auto;
     color: white;
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -73,7 +73,7 @@ img.menu {
 }
 
 /* sidebar texts */
-a {
+a.sidebar {
     position: relative;
     color: white;
     font-size: 28px;
@@ -169,8 +169,8 @@ h1#prediction{
 canvas {
     position: relative;
     justify-content: center;
-    margin-top: 50px;
-    margin-left: 795px;
+    margin-top: 5%;
+    margin-left: 40%;
     cursor: pointer;
     box-shadow: -3px 2px px 6px black;
 }
@@ -223,4 +223,114 @@ canvas {
 .pen-range {
     align-self: center;
     margin: 0 16px;
+}
+
+button#mainpage {
+    position: relative;
+    float: right;
+    margin-top: 1%;
+    right: 5%;
+    background: transparent;
+    border: none;
+    appearance: none;
+    background-color: inherit;
+}
+
+img#homei {
+    width: 2.3vw;
+    height: auto;
+    display: none;
+}
+
+button#mainpage:hover {
+    color: #d393b1;
+    opacity: 1;
+    cursor: pointer;
+}
+
+button#chart {
+    position: relative;
+    float: right;
+    margin-top: 1%;
+    right: 9%;
+    background: transparent;
+    border: none;
+    appearance: none;
+    background-color: inherit;
+}
+
+img#charti {
+    width: 2.3vw;
+    height: auto;
+    display: none;
+}
+
+button#chart:hover {
+    color: #d393b1;
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media (max-width: 425px) {
+    
+    body {
+        height: 100%;
+        width: 100%;
+        min-height: fit-content;
+    }
+
+    header {
+        position: relative;
+        height: 15vw;
+        background-color: transparent;
+        box-shadow: 0 25px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    img.logo {
+        height: auto;
+        width: 11vw;
+        margin: 1vw;
+        vertical-align: middle;
+        transition: all 0.5s ease;
+    }
+    
+    h1#logo {
+        font-weight: lighter;
+        font-size: 100%;
+        padding: auto;
+        margin: auto;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    nav {
+        transform: scale(0);
+        transform: translate(-999px, 0px);
+    }
+
+    button#mainpage {
+        margin-top: 3%;
+    }
+
+    button#chart {
+        margin-top: 3%;
+    }
+    
+    img#homei {
+        width: 8vw;
+        display: inline;
+    }
+
+    img#charti {
+        width: 8vw;
+        display: inline;
+    }
+
+    canvas {
+        position: relative;
+        justify-content: center;
+        margin: 5% 8vw 0%;
+        cursor: pointer;
+        box-shadow: -3px 2px px 6px black;
+    }
 }

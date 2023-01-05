@@ -13,12 +13,15 @@
       </style>
 </head>
 <header>
-<h1 id="logo">
-<img class="logo" src="{{ url_for('static', filename='icons/nr.png')}}" alt="logo"/>
-DATA MINING</h1>
-<div class="back">
-    <a href="{{ url_for('mainpage') }}"><button id="home" class="back">Back to Home</button></a>
-</div>
+    <h1 id="logo">
+    <img class="logo" src="{{ url_for('static', filename='icons/nr.png')}}" alt="logo"/>
+        DATA MINING
+    <a href="{{ url_for('mainpage') }}"> 
+     <button id="mainpage" class="mainpage">
+         <img src="{{ url_for('static', filename='icons/home.png') }}" alt="home" id="homei" class="homei">
+     </button>
+    </a>
+    </h1>
 </header>
 <body>
     <img class= "wave" src="{{ url_for('static', filename='icons/wave.png') }}">
